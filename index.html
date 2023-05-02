@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="js/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>Weather App</title>
+</head>
+<body>
+    <h1 class="text-center">Weather</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="search">
+               <form id = "myform">
+                <input name ="city" id="city">
+                <input name ="country" id="country">
+                   
+                   
+            
+                <button class="btn btn-primary mx-3" type="submit">Search</button>
+            </form>
+                <section class="list-group weather-list mt-3">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2 class="humidity">Humidity</h2>
+                            <p id="humidity"></p>
+                        </div>
+                        <div class="col-md-3" id="first">
+                                <h2 class="high">High</h2>
+                                <p id="high"></p>
+                            </div>
+                                <div class="col-md-3">
+                                    <h2 class="low">Low</h2>
+                                    <p id="low"></p>
+                                    
+                            </div>
+                
+                            <div class="col-md-3" id="second">
+                                    <h2 class="forecast">Forecast</h2>
+                                    <p id="forecast"></p>
+
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
